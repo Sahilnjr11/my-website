@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        /* Global styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(120deg, #4c4cf5, #f54cdf);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            padding: 30px;
+            width: 80%;
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .header {
+            background: linear-gradient(120deg, #de6df2, #4cf5c0);
+            padding: 15px;
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .description {
+            padding: 15px;
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .button {
+            background-color: #4cf5c0;
+            color: white;
+            font-size: 1.2rem;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #3bdb95;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Welcome to Our Website
+        </div>
+        <div class="description">
+            Click the button below to fill out the lead capture form and get started!
+        </div>
+        <button class="button" onclick="window.location.href='lead-capture.html';">
+            Go to Lead Capture Form
+        </button>
+    </div>
+</body>
+</html>
